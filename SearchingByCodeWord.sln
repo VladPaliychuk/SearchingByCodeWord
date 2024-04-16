@@ -8,6 +8,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SBCW.BLL", "SBCW.BLL\SBCW.B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SBCW.API", "SBCW.API\SBCW.API.csproj", "{EF3492B1-DDE9-4CDC-85F3-ABFA1FCEF1EF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4D93756A-4162-4E56-9B97-7511258EF660}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchTests", "Tests\SearchTests\SearchTests.csproj", "{15B26EFE-F7DB-4E78-BFAD-AD14A868AA59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SBCW.Tests", "SBCW.Tests", "{25A7B31F-8279-405B-92AD-F1CAF9BD6CC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +26,7 @@ Global
 		{C43CF478-C440-4062-B93F-14531B632353} = {4061F161-45A4-4B2A-A3A4-006B6ACE353A}
 		{6F8CB5A2-39AB-47F4-91E7-26DC8BF0BF2F} = {4061F161-45A4-4B2A-A3A4-006B6ACE353A}
 		{EF3492B1-DDE9-4CDC-85F3-ABFA1FCEF1EF} = {4061F161-45A4-4B2A-A3A4-006B6ACE353A}
+		{15B26EFE-F7DB-4E78-BFAD-AD14A868AA59} = {25A7B31F-8279-405B-92AD-F1CAF9BD6CC2}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C43CF478-C440-4062-B93F-14531B632353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -31,5 +41,9 @@ Global
 		{EF3492B1-DDE9-4CDC-85F3-ABFA1FCEF1EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF3492B1-DDE9-4CDC-85F3-ABFA1FCEF1EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF3492B1-DDE9-4CDC-85F3-ABFA1FCEF1EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B26EFE-F7DB-4E78-BFAD-AD14A868AA59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B26EFE-F7DB-4E78-BFAD-AD14A868AA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B26EFE-F7DB-4E78-BFAD-AD14A868AA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B26EFE-F7DB-4E78-BFAD-AD14A868AA59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

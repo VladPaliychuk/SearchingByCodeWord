@@ -11,7 +11,7 @@ public class Product
     public string? Image { get; set; }
     public string? Link { get; set; }
 
-    public Type Type { get; set; } = null!;
+    public string Type { get; set; } = null!;
 
     [JsonIgnore] public ICollection<ProductTag>? ProductTags { get; set; } = null!;
 }

@@ -7,10 +7,10 @@ namespace SBCW.DAL.Repositories;
 
 public abstract class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
 {
-    protected readonly SBCWContext _context;
+    protected readonly SearchContext _context;
     protected readonly DbSet<TEntity> _table;
     
-    protected GenericRepository(SBCWContext context)
+    protected GenericRepository(SearchContext context)
     {
         _context = context;
         _table = _context.Set<TEntity>();
@@ -33,7 +33,7 @@ public abstract class GenericRepository<TEntity> : IGenericRepository<TEntity> w
     /// <param name="id"></param>
     /// <returns>TEntity</returns>
     /// <exception cref="EntityNotFoundException"></exception>
-    public virtual async Task<TEntity> GetByIdAsync(int id)
+    public virtual async Task<TEntity> GetByIdAsync(Guid id)
     {
         return await _table.FindAsync(id)
                ?? throw new EntityNotFoundException($"{typeof(TEntity).Name} with id {id} not found.");
@@ -73,7 +73,7 @@ public abstract class GenericRepository<TEntity> : IGenericRepository<TEntity> w
     /// </summary>
     /// <param name="id"></param>
     /// <returns></returns>
-    public virtual async Task DeleteByIdAsync(int id)
+    public virtual async Task DeleteByIdAsync(Guid id)
     {
         var entity = await GetByIdAsync(id) 
                      ?? throw new EntityNotFoundException($"{typeof(TEntity).Name} with id {id} not found. " +

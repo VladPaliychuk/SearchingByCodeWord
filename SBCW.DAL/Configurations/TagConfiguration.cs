@@ -13,7 +13,7 @@ public class TagConfiguration : IEntityTypeConfiguration<Tag>
         
         builder.HasMany(t => t.ProductTags)
             .WithOne(pt => pt.Tag)
-            .HasForeignKey(pt => pt.WordId)
+            .HasForeignKey(pt => pt.TagId)
             .OnDelete(DeleteBehavior.Cascade);
     }
 }
