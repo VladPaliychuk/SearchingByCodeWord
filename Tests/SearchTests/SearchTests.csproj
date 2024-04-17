@@ -27,6 +27,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\SBCW.API\SBCW.API.csproj" />
+      <ProjectReference Include="..\..\SBCW.BLL\SBCW.BLL.csproj" />
       <ProjectReference Include="..\..\SBCW.DAL\SBCW.DAL.csproj" />
     </ItemGroup>
 

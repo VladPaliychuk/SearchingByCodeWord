@@ -1,0 +1,14 @@
+﻿services:
+  searchdb:
+    image: postgres:latest
+    container_name: searchdb
+    environment:
+      POSTGRES_DB: "SearchDatabase"
+      POSTGRES_USER: "VladPostgres"
+      POSTGRES_PASSWORD: "VladPostgres"
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5432:5432"
+    build:
+      context: .
+      dockerfile: SBCW.API/Dockerfile
