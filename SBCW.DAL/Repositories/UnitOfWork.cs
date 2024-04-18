@@ -9,17 +9,17 @@ public class UnitOfWork : IUnitOfWork
     
     public UnitOfWork(
         SearchContext context, 
-        IProductRepository productRepository, 
-        ITagRepository tagRepository
+        IProductRepository productRepository
+        //ITagRepository tagRepository
         )
     {
         this.context = context;
         _productRepository = productRepository;
-        _tagRepository = tagRepository;
+        //_tagRepository = tagRepository;
     }
 
     public IProductRepository _productRepository { get; }
-    public ITagRepository _tagRepository { get; }
+    //public ITagRepository _tagRepository { get; }
 
     public async Task SaveChangesAsync()
     {

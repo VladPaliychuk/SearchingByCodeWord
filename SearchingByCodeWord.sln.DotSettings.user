@@ -6,5 +6,6 @@
     &lt;TestId&gt;xUnit::15B26EFE-F7DB-4E78-BFAD-AD14A868AA59::net6.0::TestProject1.BLL.Tests.ProductServiceTests.GetProductByIdAsync_ShouldReturnProduct&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::15B26EFE-F7DB-4E78-BFAD-AD14A868AA59::net6.0::TestProject1.BLL.Tests.ProductServiceTests.AddProductAsync_ShouldAddProduct&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::15B26EFE-F7DB-4E78-BFAD-AD14A868AA59::net6.0::TestProject1.BLL.Tests.ProductServiceTests.DeleteProductByIdAsync_ShouldDeleteProduct&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::15B26EFE-F7DB-4E78-BFAD-AD14A868AA59::net6.0::TestProject1.API.Tests.ProductControllerTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
