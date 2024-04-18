@@ -3,7 +3,7 @@
 public interface IUnitOfWork
 {
     IProductRepository _productRepository { get; }
-    ITagRepository _categoryRepository { get; }
+    ITagRepository _tagRepository { get; }
     
     Task SaveChangesAsync();
 }

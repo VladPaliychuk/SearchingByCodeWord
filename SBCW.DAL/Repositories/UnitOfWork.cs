@@ -3,12 +3,9 @@ using SBCW.DAL.Repositories.Interfaces;
 
 namespace SBCW.DAL.Repositories;
 
-public class UnitOfWork
+public class UnitOfWork : IUnitOfWork
 {
     protected readonly SearchContext context;
-
-    public IProductRepository productRepository { get; }
-    public ITagRepository tagRepository { get; }
     
     public UnitOfWork(
         SearchContext context, 
@@ -17,10 +14,13 @@ public class UnitOfWork
         )
     {
         this.context = context;
-        this.productRepository = productRepository;
-        this.tagRepository = tagRepository;
+        _productRepository = productRepository;
+        _tagRepository = tagRepository;
     }
-    
+
+    public IProductRepository _productRepository { get; }
+    public ITagRepository _tagRepository { get; }
+
     public async Task SaveChangesAsync()
     {
         await context.SaveChangesAsync();
